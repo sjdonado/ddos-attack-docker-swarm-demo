@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -i "ddos-attack-demo.pem" ubuntu@ec2-18-190-15-1.us-east-2.compute.amazonaws.com
