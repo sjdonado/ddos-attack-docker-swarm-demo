@@ -29,11 +29,12 @@
     git clone https://github.com/sjdonado/ddos-attack-docker-swarm-demo.git
     cd ddos-attack-docker-swarm-demo
     sudo mv nginx/default.conf /etc/nginx/sites-enabled/default
-    cd api
-    sudo docker build -t ddos-attack-api .
-    sudo docker run -p 3000:3000 -d ddos-attack-api
+    docker-compose -f ./api/docker-compose.yml up
     sudo service nginx restart
 ```
 
 ## Monitoring victim nginx server
 Go to http://18.190.15.1/nginx_status
+
+## Support
+Victim project: https://github.com/sjdonado/db-benchmarking
