@@ -2,7 +2,7 @@
 while true
 do
 #Please use 'man curl' to see what -vk is for, also -X command can be useful too.
-curl -vk http://18.190.15.1
+curl -vk http://18.190.15.1:3000/benchmark
 #sleep 5
 done
 exit 0
